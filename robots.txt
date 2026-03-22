@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adiliqbal96.github.io/AsbestDemo/sitemap.xml
