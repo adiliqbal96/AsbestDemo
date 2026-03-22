@@ -22,9 +22,10 @@
   --text:       #1a1f26;
   --text-muted: #5e6673;
   --border:     #e2e8f0;
-  --shadow-sm:  0 1px 3px rgba(11,22,42,.05);
-  --shadow-md:  0 4px 12px rgba(11,22,42,.08), 0 2px 4px rgba(11,22,42,.04);
-  --shadow-lg:  0 12px 32px rgba(11,22,42,.12), 0 4px 8px rgba(11,22,42,.06);
+  --shadow-sm:  0 1px 2px rgba(11,22,42,.05);
+  --shadow-md:  0 4px 6px -1px rgba(11,22,42,.1), 0 2px 4px -1px rgba(11,22,42,.06);
+  --shadow-lg:  0 10px 15px -3px rgba(11,22,42,.1), 0 4px 6px -2px rgba(11,22,42,.05);
+  --shadow-xl:  0 20px 25px -5px rgba(11,22,42,.1), 0 10px 10px -5px rgba(11,22,42,.04);
 
   /* Spacing scale */
   --sp-1: .25rem; --sp-2: .5rem;  --sp-3: .75rem;
@@ -507,9 +508,9 @@ button, input, textarea, select {
   transition: transform var(--tr-med);
 }
 .service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-  border-color: transparent;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--border);
 }
 .service-card:hover::before { transform: scaleX(1); }
 
@@ -554,6 +555,23 @@ button, input, textarea, select {
 .service-link svg { width: 16px; height: 16px; }
 
 /* ============================================================
+   PARTNERS GRID
+   ============================================================ */
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-12);
+  padding: var(--sp-12) 0;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  transition: opacity var(--tr-med), filter var(--tr-med);
+}
+.partners-grid:hover { opacity: 0.9; filter: grayscale(0); }
+.partner-logo { max-height: 40px; width: auto; font-style: normal; }
+
+/* ============================================================
    PROCESS SECTION
    ============================================================ */
 #process {
@@ -567,7 +585,7 @@ button, input, textarea, select {
   position: absolute;
   top: -80px; right: -80px;
   width: 350px; height: 350px;
-  background: rgba(255,107,53,.06);
+  background: rgba(33,186,69,.03);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -1184,20 +1202,27 @@ button, input, textarea, select {
   .form-group.full { grid-column: 1; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
-/ *   = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-       P A R T N E R S   G R I D 
-       = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =   * / 
- . p a r t n e r s - g r i d   { 
-     d i s p l a y :   f l e x ; 
-     f l e x - w r a p :   w r a p ; 
-     a l i g n - i t e m s :   c e n t e r ; 
-     j u s t i f y - c o n t e n t :   c e n t e r ; 
-     g a p :   v a r ( - - s p - 1 2 ) ; 
-     p a d d i n g :   v a r ( - - s p - 1 2 )   0 ; 
-     o p a c i t y :   0 . 6 ; 
-     f i l t e r :   g r a y s c a l e ( 1 ) ; 
-     t r a n s i t i o n :   o p a c i t y   v a r ( - - t r - m e d ) ,   f i l t e r   v a r ( - - t r - m e d ) ; 
- } 
- . p a r t n e r s - g r i d : h o v e r   {   o p a c i t y :   0 . 9 ;   f i l t e r :   g r a y s c a l e ( 0 ) ;   } 
- . p a r t n e r - l o g o   {   m a x - h e i g h t :   4 0 p x ;   w i d t h :   a u t o ;   }  
- 
+@media (max-width: 480px) {
+  .hero-actions { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-group.full { grid-column: 1; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+/* ============================================================
+   PARTNERS GRID
+   ============================================================ */
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-12);
+  padding: var(--sp-12) 0;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  transition: opacity var(--tr-med), filter var(--tr-med);
+}
+.partners-grid:hover { opacity: 0.9; filter: grayscale(0); }
+.partner-logo { max-height: 40px; width: auto; font-style: normal; }
