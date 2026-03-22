@@ -1,776 +1,121 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- PRIMARY SEO -->
-  <title>Asbestsanering & Miljøscreening | AsbestPro Danmark</title>
-  <meta name="description" content="Professionel asbestsanering, asbestanalyse og miljøscreening. Autoriseret og forsikret firma. Gratis, uforpligtende tilbud inden for 24 timer. Ring på 70 20 00 00." />
-  <meta name="keywords" content="asbestsanering, asbest fjernelse, asbest i tag, asbestprøve, asbestanalyse, miljøscreening, asbestfirma, eternittag asbest" />
-  <link rel="canonical" href="https://asbestpro.dk/" />
-
-  <!-- OPEN GRAPH -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://asbestpro.dk/" />
-  <meta property="og:title" content="Asbestsanering & Miljøscreening | AsbestPro Danmark" />
-  <meta property="og:description" content="Professionel asbestsanering og asbestanalyse. Autoriseret firma — ring nu og få et gratis tilbud inden 24 timer." />
-  <meta property="og:image" content="https://asbestpro.dk/hero.png" />
-
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AsbestPro Danmark — Asbestsanering" />
-  <meta name="twitter:description" content="Professionel asbestsanering. Autoriseret og forsikret. Gratis tilbud inden 24 timer." />
-
-  <!-- FAVICON (inline SVG) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A2B4A'/><text y='22' x='5' font-size='18'>🛡</text></svg>" />
-
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- STYLES -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- SCHEMA.ORG JSON-LD : LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "AsbestPro Danmark",
-    "image": "https://asbestpro.dk/hero.png",
-    "url": "https://asbestpro.dk",
-    "telephone": "+4570200000",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Industrivej 14",
-      "addressLocality": "København",
-      "postalCode": "2100",
-      "addressCountry": "DK"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 55.6761,
-      "longitude": 12.5683
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "07:00",
-        "closes": "17:00"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "214"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Asbestsaneringsydelser",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Asbestsanering",
-            "description": "Komplet og lovlig fjernelse af asbest fra bygninger af alle typer."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Miljøscreening",
-            "description": "Kortlægning af farlige stoffer i bygninger før renovering eller nedrivning."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Asbestanalyse",
-            "description": "Laboratorieanalyse af prøver for asbestindhold, med hurtig svartid."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Asbestsanering af tag",
-            "description": "Specialiseret fjernelse af eternittag og andre tagmaterialer med asbest."
-          }
-        }
-      ]
-    }
-  }
-  </script>
-
-  <!-- SCHEMA.ORG JSON-LD : FAQ PAGE -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Hvad koster asbestsanering?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Prisen afhænger af mængden af asbest, materialetypen og arbejdets omfang. En typisk asbestsanering starter fra ca. 5.000 kr. og kan løbe op i 50.000+ kr. ved større opgaver. Kontakt os for et gratis og uforpligtende tilbud."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Er asbest farligt i mit hus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Asbest er farligst, når det er frigivet som støv og indåndes. Intakt asbest, som ikke er beskadiget, er typisk ikke akut farligt. Lad altid en autoriseret specialist vurdere din situation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Hvad er en asbestprøve og hvornår er den nødvendig?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "En asbestprøve er en laboratorieanalyse af et materiale fra din bygning. Den er nødvendig, hvis du mistænker asbest inden renovering eller nedrivning — og i mange tilfælde krævet ved lov."
-        }
-      }
-    ]
-  }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>asbestpro danmark // sanering.</title>
+  <meta name="description" content="asbest. pcb. bly. vi finder. vi fjerner. færdig.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ====================================================
-       STICKY HEADER
-       ==================================================== -->
-  <header id="site-header" role="banner">
+  <!-- = [HERO] = -->
+  <section class="hero" id="home">
     <div class="container">
-      <div class="header-inner">
-        <!-- Logo -->
-        <a href="#" class="logo" aria-label="AsbestPro Danmark — Forside">
-          <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <span>
-            AsbestPro
-            <small class="logo-sub">Danmark</small>
-          </span>
-        </a>
-
-        <!-- Nav -->
-        <nav class="site-nav" id="site-nav" role="navigation" aria-label="Primær navigation">
-          <a href="#services">Ydelser</a>
-          <a href="#process">Sådan virker det</a>
-          <a href="#faq">FAQ</a>
-          <a href="#om-os">Om os</a>
-          <a href="#kontakt">Kontakt</a>
-        </nav>
-
-        <!-- Header CTA -->
-        <div class="header-cta">
-          <a href="tel:+4570200000" class="phone-link" aria-label="Ring til os">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-            70 20 00 00
-          </a>
-          <a href="#kontakt" class="btn-header">Gratis Tilbud</a>
-        </div>
-
-        <!-- Hamburger -->
-        <button class="hamburger" id="hamburger" aria-label="Åbn menu" aria-expanded="false" aria-controls="site-nav">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- ====================================================
-       HERO SECTION
-       ==================================================== -->
-  <section id="hero" aria-labelledby="hero-heading">
-    <div class="hero-bg" id="hero-bg" role="img" aria-label="Professionelle asbestsanerings-specialister i arbejde"></div>
-    <div class="hero-overlay" aria-hidden="true"></div>
-
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge" aria-label="Vi er klar til at rykke ud">
-          <span class="dot" aria-hidden="true"></span>
-          Autoriseret & Certificeret
-        </div>
-
-        <h1 class="hero-title" id="hero-heading">
-          Danmarks <em>hurtigste</em><br>
-          asbestsanering —<br>
-          trygt og lovligt
-        </h1>
-
-        <p class="hero-sub">
-          Autoriseret saneringsfirma med speciale i asbest, PCB og bly. 
-          Vi rykker hurtigt ud i hele Danmark med fuld dokumentation 
-          og fast pris inden for 24 timer.
-        </p>
-
-        <div class="hero-actions">
-          <a href="tel:+4570200000" class="btn-primary" id="hero-cta-phone" aria-label="Ring til AsbestPro nu">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-            Ring nu: 70 20 00 00
-          </a>
-          <a href="#kontakt" class="btn-secondary" id="hero-cta-offer" aria-label="Få et gratis tilbud">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
-            Få gratis tilbud
-          </a>
-        </div>
-
-        <div class="hero-trust" role="list" aria-label="Vores certificeringer">
-          <div class="trust-badge" role="listitem">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            Autoriseret af Arbejdstilsynet
-          </div>
-          <div class="trust-badge" role="listitem">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            Fuld erhvervsforsikring
-          </div>
-          <div class="trust-badge" role="listitem">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            Gratis tilbud inden 24 timer
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="hero-scroll" aria-hidden="true">
-      <div class="scroll-wheel"><div class="scroll-dot"></div></div>
-      <span>Scroll</span>
-    </div>
-  </section>
-
-  <!-- ====================================================
-       STATS BAR
-       ==================================================== -->
-  <section id="stats" aria-label="Virksomhedsstatistikker">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal">
-          <div class="stat-num">487</div>
-          <div class="stat-label">Løste opgaver</div>
-        </div>
-        <div class="stat-item reveal reveal-delay-1">
-          <div class="stat-num">Siden 2008</div>
-          <div class="stat-label">Erfaring i branchen</div>
-        </div>
-        <div class="stat-item reveal reveal-delay-2">
-          <div class="stat-num">4.9<span>★</span></div>
-          <div class="stat-label">Trustpilot-rating</div>
-        </div>
-        <div class="stat-item reveal reveal-delay-3">
-          <div class="stat-num">98<span>%</span></div>
-          <div class="stat-label">Anbefaler os</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================================================
-       SERVICES SECTION
-       ==================================================== -->
-  <section id="services" aria-labelledby="services-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Vores ydelser</span>
-        <h2 class="section-title" id="services-heading">
-          Alt inden for <em>asbest</em><br>under ét tag
-        </h2>
+      <div class="running-head">SECTION 00 // INTRO</div>
+      <div class="grid-content">
+        <h1 class="hero-title">asbest.<br><em>fjernet.</em></h1>
         <p class="section-sub">
-          Fra den første prøve til den endelige dokumentation — vi håndterer
-          hele processen autoriseret og lovpligtigt.
+          autoriseret sanering. pcb, bly og asbest. 
+          vi rykker ud i hele landet. fast pris. ingen floskler.
         </p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Card 1 -->
-        <article class="service-card reveal" id="asbestsanering" aria-labelledby="svc1-heading">
-          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
-          <h3 id="svc1-heading">Asbestsanering</h3>
-          <p>Professionel og lovlig fjernelse af asbestholdige materialer fra alle typer bygninger — boliger, erhverv og industriejendomme. Med fuld dokumentation.</p>
-          <a href="#kontakt" class="service-link" aria-label="Få tilbud på asbestsanering">
-            Få tilbud
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="service-card reveal reveal-delay-1" id="asbest-tag" aria-labelledby="svc2-heading">
-          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
-          <h3 id="svc2-heading">Asbest i tag</h3>
-          <p>Fjernelse af eternittag og bølgeplader med asbestindhold. Vi sikrer lovlig bortskaffelse og kan koordinere nyt tag med samarbejdspartnere.</p>
-          <a href="#kontakt" class="service-link" aria-label="Få tilbud på asbestrenovering af tag">
-            Få tilbud
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="service-card reveal reveal-delay-2" id="miljoescreening" aria-labelledby="svc3-heading">
-          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg></div>
-          <h3 id="svc3-heading">Miljøscreening</h3>
-          <p>Kortlægning af farlige stoffer inden renovering eller nedrivning, herunder asbest, PCB og bly. Nødvendig dokumentation til kommunen og Arbejdstilsynet.</p>
-          <a href="#kontakt" class="service-link" aria-label="Bestil miljøscreening">
-            Bestil screening
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="service-card reveal reveal-delay-3" id="asbestprove" aria-labelledby="svc4-heading">
-          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M9 3v8l-4.5 7A1 1 0 005.4 19.5h13.2a1 1 0 00.9-1.5L15 11V3"/></svg></div>
-          <h3 id="svc4-heading">Asbestprøve & analyse</h3>
-          <p>Hurtig laboratorieanalyse af byggematerialer for asbestindhold. Vi udtager prøven, analyserer og leverer akkrediteret svar inden for 2–5 hverdage.</p>
-          <a href="#kontakt" class="service-link" aria-label="Bestil asbestprøve">
-            Bestil prøve
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================================================
-       PROCESS SECTION
-       ==================================================== -->
-  <section id="process" aria-labelledby="process-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label process-section-label">Processen</span>
-        <h2 class="section-title process-title" id="process-heading">
-          Autoriseret håndtering<br>fra <em>start til slut</em>
-        </h2>
-        <p class="section-sub process-sub">
-          Vi gør processen nem og gennemsigtig — du ved altid præcist, hvad der sker og hvad det koster.
-        </p>
-      </div>
-
-      <div class="process-grid">
-        <div class="process-step reveal">
-          <div class="step-num">01</div>
-          <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.69A2 2 0 012 .9h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
-          <div class="step-title">Kontakt os</div>
-          <p class="step-desc">Ring eller udfyld formularen. Vi svarer inden for 2 timer på hverdage og giver dig et første estimat.</p>
-        </div>
-        <div class="process-step reveal reveal-delay-1">
-          <div class="step-num">02</div>
-          <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-          <div class="step-title">Besigtigelse</div>
-          <p class="step-desc">En specialist rykker ud og kortlægger omfanget. Vi udtager eventuelle prøver og giver dig et fast tilbud.</p>
-        </div>
-        <div class="process-step reveal reveal-delay-2">
-          <div class="step-num">03</div>
-          <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <div class="step-title">Sanering</div>
-          <p class="step-desc">Autoriseret personale fjerner alt asbest sikkert og lovpligtigt. Naboer og miljø er altid beskyttet.</p>
-        </div>
-        <div class="process-step reveal reveal-delay-3">
-          <div class="step-num">04</div>
-          <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-          <div class="step-title">Dokumentation</div>
-          <p class="step-desc">Du modtager komplet dokumentation til kommunen og forsikringsselskab. Alt er i orden — garanteret.</p>
+        <div style="display: flex; gap: var(--sp-8); align-items: center;">
+          <a href="#kontakt" class="btn-acid">bestil sanering</a>
+          <a href="tel:+4570200000" class="btn-outline">ring nu</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====================================================
-       ASBESTBILEN SECTION (Improved Authenticity)
-       ==================================================== -->
-  <section id="asbestbilen" aria-labelledby="asbestbilen-heading">
+  <!-- = [STATS] = -->
+  <section id="stats">
     <div class="container">
-      <div class="zick-zack">
-        <div class="z-content reveal">
-          <span class="section-label">Vores setup</span>
-          <h2 class="section-title" id="asbestbilen-heading">
-            Bestil <em>Asbestbilen</em> —<br>vi er klar døgnet rundt
-          </h2>
-          <p class="section-sub">
-            Vi råder over en moderne flåde af specialindrettede saneringsbiler. 
-            Det er jeres garanti for, at vi altid har det rette udstyr med — 
-            fra HEPA-filtre til specialstøvsugere og værnemidler.
-          </p>
-          <div class="feat-list">
-            <div class="feat-item"><span>✓</span> Specialiseret udstyr på alle biler</div>
-            <div class="feat-item"><span>✓</span> Certificeret mandskab</div>
-            <div class="feat-item"><span>✓</span> Hurtig udrykning i hele landet</div>
+      <div class="running-head">SECTION 01 // DATA</div>
+      <div class="grid-content">
+        <h2 class="section-title">beviset.</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-num">487</span>
+            <span class="stat-label">løste opgaver</span>
           </div>
-          <div style="margin-top: var(--sp-8)">
-            <a href="tel:+4570200000" class="btn-primary">Ring og hør mere</a>
+          <div class="stat-item">
+            <span class="stat-num">2008</span>
+            <span class="stat-label">grundlagt</span>
           </div>
-        </div>
-        <div class="z-visual reveal reveal-delay-1">
-          <div class="z-image-wrap">
-            <img src="https://images.unsplash.com/photo-1504307659033-b423bd5d6240?auto=format&fit=crop&q=80&w=1200" alt="AsbestPro teamet i arbejde" />
+          <div class="stat-item">
+            <span class="stat-num">98%</span>
+            <span class="stat-label">anbefaler os</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- = [PARTNERS] = -->
-  <section id="partners">
+  <!-- = [SERVICES] = -->
+  <section id="services">
     <div class="container">
-      <div class="partners-grid reveal">
-        <div class="partner-logo" style="font-weight: 800; font-size: 1.2rem; color: #444;">DI BYGGERI</div>
-        <div class="partner-logo" style="font-weight: 800; font-size: 1.2rem; color: #444;">SMV DANMARK</div>
-        <div class="partner-logo" style="font-weight: 800; font-size: 1.2rem; color: #444;">TEKNIQ ARBEJDSGIVERNE</div>
-        <div class="partner-logo" style="font-weight: 800; font-size: 1.2rem; color: #444;">DANSK BYGGERI</div>
+      <div class="running-head">SECTION 02 // YDELSER</div>
+      <div class="grid-content">
+        <h2 class="section-title">hvad vi <em>gør.</em></h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3 style="font-family: var(--font-mono); font-size: 1rem; margin-bottom: 1rem;">asbest.</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">fjernelse af tagplader, isolering og gulve.</p>
+          </div>
+          <div class="stat-item">
+            <h3 style="font-family: var(--font-mono); font-size: 1rem; margin-bottom: 1rem;">miljø.</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">screening for pcb, bly og andre tungmetaller.</p>
+          </div>
+          <div class="stat-item">
+            <h3 style="font-family: var(--font-mono); font-size: 1rem; margin-bottom: 1rem;">rens.</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">skimmelsvamp og totalrengøring efter sanering.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ====================================================
-       TESTIMONIALS
-       ==================================================== -->
-  <section id="om-os" aria-labelledby="testimonials-heading">
+  <!-- = [ASBESTBILEN] = -->
+  <section id="asbestbilen">
     <div class="container">
-      <div class="section-header text-center reveal">
-        <span class="section-label">Kundernes ord</span>
-        <h2 class="section-title" id="testimonials-heading">
-          214 tilfredse kunder —<br><em>4.9 ★ på Trustpilot</em>
-        </h2>
+      <div class="running-head">SECTION 03 // SETUP</div>
+      <div class="grid-content">
+        <h2 class="section-title">asbestbilen.</h2>
         <p class="section-sub">
-          Vi måler vores succes på dine resultater, ikke vores egne. Læs, hvad andre boligejere og virksomheder siger.
+          vores flåde er jeres garanti. specialudstyr på alle biler. 
+          hepa-filtre. certificeret mandskab.
         </p>
-      </div>
-
-      <div class="testimonials-grid">
-        <article class="review-card reveal" aria-label="Kundeanmeldelse fra Henrik">
-          <div class="review-quote" aria-hidden="true">"</div>
-          <p>Vi havde mistanke om asbest i vores 1960'er villa inden vi renoverede. AsbestPro rykkede ud næste dag, udtog prøver og sørgede for komplet sanering. Alt dokumentation var klar samme uge. Kan kun anbefales!</p>
-          <div class="review-footer">
-            <div class="review-avatar" aria-hidden="true">HJ</div>
-            <div class="review-meta">
-              <strong>Henrik Jensen</strong>
-              <span>Boligejer, Aarhus</span>
-            </div>
-            <div class="stars" aria-label="5 ud af 5 stjerner">★★★★★</div>
-          </div>
-        </article>
-
-        <article class="review-card reveal reveal-delay-1" aria-label="Kundeanmeldelse fra Mette">
-          <div class="review-quote" aria-hidden="true">"</div>
-          <p>Vores andelsboligforening havde brug for miljøscreening inden renovering af fællesarealerne. AsbestPro leverede en grundig rapport til tiden og til den aftalte pris. Professionelt fra start til slut.</p>
-          <div class="review-footer">
-            <div class="review-avatar" aria-hidden="true">MK</div>
-            <div class="review-meta">
-              <strong>Mette Kristiansen</strong>
-              <span>Bestyrelsesformand, Frederiksberg</span>
-            </div>
-            <div class="stars" aria-label="5 ud af 5 stjerner">★★★★★</div>
-          </div>
-        </article>
-
-        <article class="review-card reveal reveal-delay-2" aria-label="Kundeanmeldelse fra Lars">
-          <div class="review-quote" aria-hidden="true">"</div>
-          <p>Eternittaget på vores gamle lade indeholdte asbest. AsbestPro håndterede det hele — fra fjernelse til godkendt bortskaffelse — og vi fik klar kommunikation hele vejen igennem. Super service!</p>
-          <div class="review-footer">
-            <div class="review-avatar" aria-hidden="true">LP</div>
-            <div class="review-meta">
-              <strong>Lars Pedersen</strong>
-              <span>Landmand & erhvervsejer, Odense</span>
-            </div>
-            <div class="stars" aria-label="5 ud af 5 stjerner">★★★★★</div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================================================
-       FAQ SECTION
-       ==================================================== -->
-  <section id="faq" aria-labelledby="faq-heading">
-    <div class="container">
-      <div class="faq-wrap">
-        <!-- Left column: intro + sidebox -->
-        <div class="faq-intro reveal">
-          <span class="section-label">Frequently Asked Questions</span>
-          <h2 class="section-title" id="faq-heading">
-            Dine <em>spørgsmål</em><br>besvaret
-          </h2>
-          <p class="section-sub">
-            Asbest kan virke uoverskueligt. Her finder du svar på de mest
-            stillede spørgsmål — ellers er du altid velkommen til at ringe.
-          </p>
-
-          <div class="faq-cta-box">
-            <h4>Har du et specifikt spørgsmål?</h4>
-            <p>Vores specialister svarer dig inden for 2 timer på hverdage.</p>
-            <a href="tel:+4570200000" class="btn-primary" aria-label="Ring for hjælp med asbest">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-              Ring: 70 20 00 00
-            </a>
-          </div>
-        </div>
-
-        <!-- Right column: accordion -->
-        <div class="faq-list reveal reveal-delay-1" role="list">
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
-              Hvad koster asbestsanering?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
-              <p>Prisen afhænger af mængden af asbest, materialetypen og adgangsforholdene. En typisk opgave starter fra ca. 5.000 kr. og kan løbe op til 50.000+ kr. ved store projekter. Kontakt os for et gratis, uforpligtende tilbud tilpasset din situation.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
-              Er mit eternittag farligt?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
-              <p>Eternittag produceret før 1988 indeholder typisk asbest. Intakte tage udgør sjældent en umiddelbar risiko, men ved renovering, rengøring eller nedrivning frigives asbestfibre og skal fjernes af autoriseret personale. Lad os vurdere dit tag gratis.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
-              Hvad er en asbestprøve og hvornår er den nødvendig?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
-              <p>En asbestprøve er en laboratorietest, der afgør om et materiale indeholder asbest. Det er lovpligtigt at kortlægge farlige stoffer inden renovering og nedrivning i bygninger opført eller renoveret inden 1999. Vi udtager og analyserer prøver hurtigt og akkrediteret.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
-              Kan jeg selv fjerne asbest?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
-              <p>Nej. Ifølge dansk lovgivning er håndtering og fjernelse af asbest kun tilladt for autoriserede virksomheder. Private kan i begrænset omfang fjerne ikke-støvende materialer i egen bolig, men i praksis anbefales det altid at bruge et autoriseret firma for at undgå bøder og sikre lovlig bortskaffelse.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
-              Hvad er en miljøscreening?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
-              <p>En miljøscreening er en kortlægning af farlige og miljøskadelige stoffer i en bygning — herunder asbest, PCB, bly og PAH. Den er lovpligtig inden større renoveringer og nedrivninger og leveres som en rapport, som sendes til kommunen og Arbejdstilsynet.</p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">
-              Hvor hurtigt kan I rykke ud?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6">
-              <p>Vi kan typisk gennemføre en besigtigelse inden for 1–2 hverdage og starte sanering inden for 5–7 hverdage. I akutte tilfælde tilbyder vi hasteservice. Ring til os på 70 20 00 00, og vi finder en løsning.</p>
-            </div>
-          </div>
+        <div style="margin-top: var(--sp-12)">
+           <img src="https://images.unsplash.com/photo-1541888941257-204b7790cd59?auto=format&fit=crop&q=80&w=1200" alt="asbestbilen" style="width: 100%; filter: grayscale(1) contrast(1.2);">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====================================================
-       CONTACT SECTION
-       ==================================================== -->
-  <section id="kontakt" aria-labelledby="kontakt-heading">
+  <!-- = [KONTAKT] = -->
+  <section id="kontakt">
     <div class="container">
-      <div class="contact-grid">
-        <!-- Left: info -->
-        <div class="contact-info reveal">
-          <span class="section-label" style="color:var(--orange)">Kontakt os</span>
-          <h2 class="section-title" id="kontakt-heading" style="color:#fff">
-            Få et gratis,<br><em>uforpligtende tilbud</em>
-          </h2>
-          <p class="section-sub" style="color:rgba(255,255,255,.6)">
-            Udfyld formularen eller ring direkte. Vi svarer altid inden for 2 timer
-            på hverdage og leverer tilbud inden 24 timer.
-          </p>
-
-          <div class="contact-features">
-            <div class="contact-feat">
-              <div class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-              <div>
-                <strong>Svar inden for 2 timer</strong>
-                <span>Alle henvendelser besvares hurtigt</span>
-              </div>
-            </div>
-            <div class="contact-feat">
-              <div class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
-              <div>
-                <strong>Tilbud inden 24 timer</strong>
-                <span>Fast pris — ingen overraskelser</span>
-              </div>
-            </div>
-            <div class="contact-feat">
-              <div class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-              <div>
-                <strong>Autoriseret & forsikret</strong>
-                <span>Fuldt dokumenteret sanering</span>
-              </div>
-            </div>
-            <div class="contact-feat">
-              <div class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.69A2 2 0 012 .9h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
-              <div>
-                <strong><a href="tel:+4570200000" style="color:var(--orange)">70 20 00 00</a></strong>
-                <span>Hverdage 07:00–17:00</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: form -->
-        <div class="contact-form-card reveal reveal-delay-1">
-          <h3 class="form-title">Skriv til os — det er <em>gratis &amp; uforpligtende</em></h3>
-
-          <form id="lead-form" novalidate aria-label="Tilbudsformular">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="navn">Navn</label>
-                <input type="text" id="navn" name="navn" placeholder="Dit fulde navn" required autocomplete="name" />
-              </div>
-              <div class="form-group">
-                <label for="tlf">Telefon</label>
-                <input type="tel" id="tlf" name="tlf" placeholder="12 34 56 78" required autocomplete="tel" />
-              </div>
-              <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="din@email.dk" required autocomplete="email" />
-              </div>
-              <div class="form-group">
-                <label for="postnr">Postnummer</label>
-                <input type="text" id="postnr" name="postnr" placeholder="1234" pattern="[0-9]{4}" autocomplete="postal-code" />
-              </div>
-              <div class="form-group full">
-                <label for="ydelse">Ydelse</label>
-                <select id="ydelse" name="ydelse">
-                  <option value="">Vælg ydelse...</option>
-                  <option value="asbestsanering">Asbestsanering</option>
-                  <option value="asbest-tag">Asbest i tag (eternit)</option>
-                  <option value="miljoescreening">Miljøscreening</option>
-                  <option value="asbestprove">Asbestprøve &amp; analyse</option>
-                  <option value="andet">Andet</option>
-                </select>
-              </div>
-              <div class="form-group full">
-                <label for="besked">Beskrivelse (valgfri)</label>
-                <textarea id="besked" name="besked" placeholder="Beskriv dit behov kort — f.eks. alder på bygning, mistanke om materialer..."></textarea>
-              </div>
-            </div>
-
-            <button type="submit" class="form-submit" id="form-submit-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
-              Send — Gratis &amp; Uforpligtende
-            </button>
-
-            <p class="form-note">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z"/></svg>
-              Dine oplysninger behandles fortroligt og deles ikke med tredjepart.
-            </p>
-          </form>
-
-          <!-- Success state -->
-          <div class="form-success" id="form-success" aria-live="polite">
-            <div class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <h3>Tak! Vi har modtaget din henvendelse.</h3>
-            <p>En af vores specialister kontakter dig inden 2 timer (hverdage). Vi glæder os til at hjælpe dig!</p>
-          </div>
+      <div class="running-head">SECTION 04 // KONTAKT</div>
+      <div class="grid-content">
+        <h2 class="section-title">start nu.</h2>
+        <p class="section-sub">skriv eller ring. vi svarer inden for 2 timer.</p>
+        <div style="margin-top: var(--sp-12)">
+          <a href="mailto:info@asbestpro.dk" class="btn-acid">send mail</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====================================================
-       FOOTER
-       ==================================================== -->
-  <footer id="footer" role="contentinfo">
+  <!-- = [FOOTER] = -->
+  <footer style="padding: var(--sp-16) 0; border-top: 1px solid var(--border);">
     <div class="container">
-      <div class="footer-grid">
-        <!-- Brand -->
-        <div class="footer-brand">
-          <a href="#" class="logo footer-logo" aria-label="AsbestPro Danmark — hjem">
-            <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-            <span>AsbestPro <small class="logo-sub">Danmark</small></span>
-          </a>
-          <p>Danmarks foretrukne partner inden for asbestsanering, miljøscreening og asbestanalyse. Autoriseret, forsikret og til rådighed hele landet.</p>
-        </div>
-
-        <!-- Ydelser -->
-        <div class="footer-col">
-          <h5>Ydelser</h5>
-          <ul>
-            <li><a href="#asbestsanering">Asbestsanering</a></li>
-            <li><a href="#asbest-tag">Asbest i tag</a></li>
-            <li><a href="#miljoescreening">Miljøscreening</a></li>
-            <li><a href="#asbestprove">Asbestprøve</a></li>
-          </ul>
-        </div>
-
-        <!-- Om virksomheden -->
-        <div class="footer-col">
-          <h5>Virksomhed</h5>
-          <ul>
-            <li><a href="#om-os">Om os</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#stats">Resultater</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
-        </div>
-
-        <!-- Kontaktinfo (NAP) -->
-        <div class="footer-col">
-          <h5>Kontakt</h5>
-          <div class="footer-contact-item">
-            <div class="footer-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.69A2 2 0 012 .9h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
-            <a href="tel:+4570200000" aria-label="Ring til AsbestPro">70 20 00 00</a>
-          </div>
-          <div class="footer-contact-item">
-            <div class="footer-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-            <a href="mailto:info@asbestpro.dk">info@asbestpro.dk</a>
-          </div>
-          <div class="footer-contact-item">
-            <div class="footer-contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <address style="font-style:normal">Industrivej 14, 2100 København</address>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer bottom -->
-      <div class="footer-bottom">
-        <p>© 2024 AsbestPro Danmark ApS · CVR: 29 38 47 56 · Industrivej 14, 2100 København Ø</p>
-        <div class="footer-certs" aria-label="Certificeringer">
-          <span class="cert-badge">Autoriseret</span>
-          <span class="cert-badge">Medlem af DI Byggeri</span>
-          <span class="cert-badge">Forsikret</span>
-        </div>
+      <div class="running-head">END // 2024</div>
+      <div class="grid-content" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); display: flex; justify-content: space-between;">
+        <div>asbestpro danmark aps // cvr: 29 38 47 56</div>
+        <div>industrivej 14, 2100 kbh ø</div>
       </div>
     </div>
   </footer>
-
-  <!-- ====================================================
-       STICKY MOBILE CTA
-       ==================================================== -->
-  <div id="mobile-cta" role="complementary" aria-label="Kontakt os hurtigt">
-    <a href="tel:+4570200000" class="mob-phone" aria-label="Ring til AsbestPro">
-      <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-      Ring nu
-    </a>
-    <a href="#kontakt" class="mob-cta" aria-label="Få et gratis tilbud">
-      Gratis tilbud →
-    </a>
-  </div>
-
-  <!-- SCRIPTS -->
-  <script src="script.js" defer></script>
 
 </body>
 </html>
