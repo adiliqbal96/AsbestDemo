@@ -11,13 +11,11 @@
   --text:       var(--noir-text);
   --accent:     var(--acid);
 
-  --text-muted: #888888;
-  --border:     rgba(245,245,245,.1);
-  
   /* Spacing scale */
-  --sp-4: 1rem;   --sp-8: 2rem;
-  --sp-12: 3rem;  --sp-16: 4rem;
-  --sp-20: 5rem;  --sp-24: 6rem;
+  --sp-4: 1.25rem;   --sp-8: 2.5rem;
+  --sp-12: 3.75rem;  --sp-16: 5rem;
+  --sp-20: 6.25rem;  --sp-24: 7.5rem;
+  --sp-32: 10rem;
 
   /* Typography */
   --font-serif:   'Playfair Display', serif;
@@ -25,8 +23,57 @@
   --font-body:    var(--font-mono);
   --font-heading: var(--font-serif);
 
+  /* Radius: 0px or 40px only */
+  --radius-pill: 40px;
+
   /* Transitions */
-  --tr-med:    280ms cubic-bezier(.4,0,.2,1);
+  --tr-med:    400ms cubic-bezier(.19,1,.22,1);
+}
+
+/* ---- GLOBAL LAYOUT ---- */
+.page-wrap {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-nav {
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-8) 0;
+  z-index: 1000;
+  background: var(--bg);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-12);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color var(--tr-med);
+}
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+.content-wrap {
+  flex: 1;
+  margin-left: 100px;
 }
 
 /* ---- RESET & BASE ---- */
@@ -43,11 +90,11 @@ body {
 
 /* ---- ASYMMETRIC GRID (5-COL) ---- */
 .container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 var(--sp-8);
+  padding: 0 var(--sp-16);
   display: grid;
-  grid-template-columns: 1fr 4fr; /* Simple 5-col split: 1 col whitespace, 4 cols content */
+  grid-template-columns: 1fr 4fr;
   gap: var(--sp-12);
 }
 
