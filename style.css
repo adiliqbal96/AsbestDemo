@@ -113,11 +113,12 @@ button, input, textarea, select {
 .zick-zack {
   display: flex;
   align-items: center;
-  gap: var(--sp-12);
-  margin-top: var(--sp-16);
+  gap: var(--sp-16);
+  margin-top: var(--sp-20);
+  padding: var(--sp-12) 0;
 }
 .zick-zack.reverse { flex-direction: row-reverse; }
-.z-content { flex: 1; }
+.z-content { flex: 1.2; }
 .z-visual { flex: 1; position: relative; }
 .z-image-wrap {
   border-radius: var(--radius-lg);
