@@ -157,9 +157,9 @@ button, input, textarea, select {
   border-radius: var(--radius-md);
   display: grid;
   place-items: center;
-  font-size: 1.1rem;
   flex-shrink: 0;
 }
+.logo-icon svg { width: 22px; height: 22px; color: #fff; }
 .logo span { display: flex; flex-direction: column; line-height: 1.1; }
 .logo .logo-sub { font-size: .65rem; font-weight: 500; letter-spacing: .1em; color: rgba(255,255,255,.6); text-transform: uppercase; }
 
@@ -462,7 +462,7 @@ button, input, textarea, select {
 }
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--sp-6);
 }
 .service-card {
@@ -498,10 +498,14 @@ button, input, textarea, select {
   display: grid;
   place-items: center;
   margin-bottom: var(--sp-4);
-  font-size: 1.5rem;
   background: rgba(26,43,74,.06);
 }
-.service-card:hover .service-icon { background: rgba(255,107,53,.08); }
+.service-icon svg {
+  width: 26px; height: 26px;
+  color: var(--navy);
+  transition: color var(--tr-fast);
+}
+.service-card:hover .service-icon svg { color: var(--orange); }
 
 .service-card h3 {
   font-family: var(--font-heading);
@@ -553,7 +557,7 @@ button, input, textarea, select {
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--sp-4);
   position: relative;
   margin-top: var(--sp-12);
@@ -575,6 +579,7 @@ button, input, textarea, select {
   align-items: center;
   text-align: center;
   gap: var(--sp-4);
+  padding: 0 var(--sp-2);
 }
 .step-num {
   width: 72px; height: 72px;
@@ -598,9 +603,11 @@ button, input, textarea, select {
   transform: scale(1.08);
 }
 .step-icon {
-  font-size: 1.8rem;
-  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.step-icon svg { width: 28px; height: 28px; color: var(--orange); opacity: 0.75; }
 .step-title {
   font-family: var(--font-heading);
   font-size: 1rem;
@@ -622,7 +629,7 @@ button, input, textarea, select {
 }
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-6);
   margin-top: var(--sp-10);
 }
@@ -697,10 +704,10 @@ button, input, textarea, select {
 }
 .faq-wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.4fr;
   gap: var(--sp-12);
   align-items: start;
-  margin-top: var(--sp-10);
+  margin-top: var(--sp-8);
 }
 .faq-intro .section-sub { max-width: 400px; }
 .faq-cta-box {
@@ -819,9 +826,9 @@ button, input, textarea, select {
   border-radius: var(--radius-sm);
   display: grid;
   place-items: center;
-  font-size: 1rem;
   flex-shrink: 0;
 }
+.feat-icon svg { width: 17px; height: 17px; color: var(--orange); }
 .contact-feat strong {
   display: block;
   font-size: .9rem;
@@ -966,9 +973,9 @@ button, input, textarea, select {
   border-radius: var(--radius-sm);
   display: grid;
   place-items: center;
-  font-size: .75rem;
   flex-shrink: 0;
 }
+.footer-contact-icon svg { width: 13px; height: 13px; color: var(--orange); }
 
 .footer-bottom {
   display: flex;
@@ -1070,6 +1077,11 @@ button, input, textarea, select {
    ============================================================ */
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
   .faq-wrap { grid-template-columns: 1fr; }
   .faq-intro .section-sub { max-width: 100%; }
   .faq-cta-box { display: none; }
@@ -1097,7 +1109,11 @@ button, input, textarea, select {
   .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); }
   .stat-item:nth-child(3), .stat-item:last-child { border-bottom: none; }
 
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
   .process-grid::before { display: none; }
+
+  .services-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
 
   .contact-grid { grid-template-columns: 1fr; }
 
