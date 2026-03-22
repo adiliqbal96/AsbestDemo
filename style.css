@@ -9,21 +9,22 @@
 /* ---- CSS CUSTOM PROPERTIES ---- */
 :root {
   /* Colours */
-  --navy:       #1A2B4A;
-  --navy-light: #243858;
-  --navy-dark:  #111D33;
+  --navy:       #0b162a;
+  --navy-light: #162642;
+  --navy-dark:  #0a0f18;
   --orange:     #FF6B35;
   --orange-dark:#E55A24;
-  --green:      #2ECC71;
-  --green-dark: #27AE60;
-  --bg:         #F8F9FA;
+  --green:      #21ba45;
+  --green-dark: #1ea33c;
+  --bg:         #FFFFFF;
+  --bg-alt:     #f8f9fb;
   --bg-card:    #FFFFFF;
-  --text:       #1C1C1E;
-  --text-muted: #6B7280;
-  --border:     #E5E7EB;
-  --shadow-sm:  0 2px 8px rgba(26,43,74,.08);
-  --shadow-md:  0 8px 32px rgba(26,43,74,.12);
-  --shadow-lg:  0 20px 60px rgba(26,43,74,.18);
+  --text:       #1a1f26;
+  --text-muted: #5e6673;
+  --border:     #e2e8f0;
+  --shadow-sm:  0 1px 3px rgba(11,22,42,.05);
+  --shadow-md:  0 4px 12px rgba(11,22,42,.08), 0 2px 4px rgba(11,22,42,.04);
+  --shadow-lg:  0 12px 32px rgba(11,22,42,.12), 0 4px 8px rgba(11,22,42,.06);
 
   /* Spacing scale */
   --sp-1: .25rem; --sp-2: .5rem;  --sp-3: .75rem;
@@ -34,6 +35,7 @@
   /* Typography */
   --font-body:    'Inter', system-ui, sans-serif;
   --font-heading: 'Sora', 'Inter', system-ui, sans-serif;
+  --font-mono:    'Inter', monospace; /* Used for industrial look with letter-spacing */
 
   /* Border radius */
   --radius-sm: 6px;
@@ -89,11 +91,12 @@ button, input, textarea, select {
 }
 .section-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 2.75rem);
   font-weight: 800;
   color: var(--navy);
-  line-height: 1.15;
+  line-height: 1.1;
   margin-bottom: var(--sp-4);
+  letter-spacing: -0.02em;
 }
 .section-title em { color: var(--orange); font-style: normal; }
 .section-sub {
@@ -104,6 +107,24 @@ button, input, textarea, select {
 }
 .text-center { text-align: center; }
 .text-center .section-sub { margin: 0 auto; }
+
+/* ---- ZICK-ZACK UTILITY ---- */
+.zick-zack {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-12);
+  margin-top: var(--sp-16);
+}
+.zick-zack.reverse { flex-direction: row-reverse; }
+.z-content { flex: 1; }
+.z-visual { flex: 1; position: relative; }
+.z-image-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+.z-image-wrap img { width: 100%; height: auto; display: block; }
 
 /* ---- SCROLL ANIMATIONS ---- */
 .reveal {
@@ -299,11 +320,11 @@ button, input, textarea, select {
 }
 .hero-title em { color: var(--orange); font-style: normal; }
 .hero-sub {
-  font-size: 1.1rem;
-  color: rgba(255,255,255,.8);
-  line-height: 1.75;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,.9);
+  line-height: 1.6;
   margin-bottom: var(--sp-8);
-  max-width: 560px;
+  max-width: 600px;
 }
 
 .hero-actions {
@@ -318,22 +339,22 @@ button, input, textarea, select {
   display: inline-flex;
   align-items: center;
   gap: var(--sp-2);
-  background: var(--orange);
+  background: var(--green);
   color: #fff;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.05rem;
   padding: var(--sp-4) var(--sp-8);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-md);
   border: none;
   cursor: pointer;
   transition: background var(--tr-med), transform var(--tr-med), box-shadow var(--tr-med);
-  box-shadow: 0 6px 24px rgba(255,107,53,.45);
+  box-shadow: 0 4px 14px rgba(33,186,69,.4);
   text-decoration: none;
 }
 .btn-primary:hover {
-  background: var(--orange-dark);
+  background: var(--green-dark);
   transform: translateY(-2px);
-  box-shadow: 0 10px 32px rgba(255,107,53,.55);
+  box-shadow: 0 6px 20px rgba(33,186,69,.5);
 }
 .btn-primary svg { width: 20px; height: 20px; flex-shrink: 0; }
 
@@ -615,9 +636,39 @@ button, input, textarea, select {
   color: #fff;
 }
 .step-desc {
-  font-size: .85rem;
-  color: rgba(255,255,255,.55);
-  line-height: 1.65;
+  font-size: .9rem;
+  color: rgba(255,255,255,.7);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   ASBESTBILEN (RESPONSE VEHICLE)
+   ============================================================ */
+#asbestbilen {
+  padding: var(--sp-24) 0;
+  background: var(--bg-alt);
+}
+.feat-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+.feat-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-weight: 600;
+  color: var(--navy);
+}
+.feat-item span {
+  width: 24px; height: 24px;
+  background: var(--green);
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: .8rem;
 }
 
 /* ============================================================
@@ -1109,8 +1160,11 @@ button, input, textarea, select {
   .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); }
   .stat-item:nth-child(3), .stat-item:last-child { border-bottom: none; }
 
-  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: 1fr; }
   .process-grid::before { display: none; }
+
+  .zick-zack { flex-direction: column !important; gap: var(--sp-8); }
+  .z-visual { order: -1; }
 
   .services-grid { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
@@ -1130,3 +1184,20 @@ button, input, textarea, select {
   .form-group.full { grid-column: 1; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
+/ *   = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+       P A R T N E R S   G R I D 
+       = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =   * / 
+ . p a r t n e r s - g r i d   { 
+     d i s p l a y :   f l e x ; 
+     f l e x - w r a p :   w r a p ; 
+     a l i g n - i t e m s :   c e n t e r ; 
+     j u s t i f y - c o n t e n t :   c e n t e r ; 
+     g a p :   v a r ( - - s p - 1 2 ) ; 
+     p a d d i n g :   v a r ( - - s p - 1 2 )   0 ; 
+     o p a c i t y :   0 . 6 ; 
+     f i l t e r :   g r a y s c a l e ( 1 ) ; 
+     t r a n s i t i o n :   o p a c i t y   v a r ( - - t r - m e d ) ,   f i l t e r   v a r ( - - t r - m e d ) ; 
+ } 
+ . p a r t n e r s - g r i d : h o v e r   {   o p a c i t y :   0 . 9 ;   f i l t e r :   g r a y s c a l e ( 0 ) ;   } 
+ . p a r t n e r - l o g o   {   m a x - h e i g h t :   4 0 p x ;   w i d t h :   a u t o ;   }  
+ 
